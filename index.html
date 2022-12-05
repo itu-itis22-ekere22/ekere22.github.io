@@ -2,13 +2,19 @@
 <html lang=tr>
 	<head>
 		<title> Emir Arda Eker's CV </title>
-		 <meta http-equiv="Content-Type" ;content="text/html"; charset="utf-32" />
-		 <link rel="icon" type="image" href="favicon.png">
-		 <link rel="stylesheet" href="rules.css">
-		 <script src="https://kit.fontawesome.com/9b79fb6eb5.js" crossorigin="anonymous"></script>
+		<meta http-equiv="Content-Type" ;content="text/html"; charset="utf-32" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="foo.js"></script>
+		<script src="https://kit.fontawesome.com/9b79fb6eb5.js" crossorigin="anonymous"></script>  
 	</head>
 
-	<body>
+	<body class="all">
+		<!--
+		<div id="uppersection">
+			<a href="#pinfo">Personal Information</a>&nbsp<a href="#education">Education</a>&nbsp<a href="#skills">Skills</a>&nbsp<a href="#langs">Languages</a>&nbsp<a href="#hobbies">Hobbies</a>
+		</div>
+		-->
 		<div class="container">
 			<a href="#pinfo"><i class="fa-solid fa-user-plus" id="pinfo1"> </i></a>
 			<a href="#education"><i class="fa-solid fa-book-open"  id="education1"></i></a>
@@ -17,23 +23,25 @@
 			<a href="#hobbies"> <i class="fa-solid fa-palette" id="hobbies1"></i></a>
 		</div>
 
-		<h1>Emir Arda Eker</h1>
-		<h3>Student</h3>
-		<a href="#pinfo"><img src="me.jpg" alt="Picture of myself"></a>
+		<div class="gradient-border">
+			<h1 id="myname" >Emir Arda Eker</h1>
+			<h3 id="myocc">Student</h3>
+		</div>
+		<div id="myphoto" class="gradient-border"> <a href="#pinfo"><img src="me.jpg" alt="Picture of myself"></a> </div>
 		<div>
 			<h2 id="pinfo">Personal Information</h2>
 			<p><b>Address:</b> İstanbul/Şişli
 			<br/><b>Contact Num:</b> +905362007172
 			<br/><b>Email</b> e.arda.e@outlook.com
-			<br/><a href="https://github.com/itu-itis22-ekere22" target="_blank"><b>Click For My GitHub Profile.</b></a></p>
+			<br/><button class="custom-btn btn-7"><span>GitHub Profile</span></button></p>
 			
 			<br/>
 		</div>
-		<hr/>
+		
 		<div id="education">
 			<h2>Education</h2>
 
-			<table>
+			<table id="table1">
 				<tr>
 					<th>School</th>
 					<th>Department</th>
@@ -49,7 +57,7 @@
 			
 			<h3>Courses I am taking this semester Ç</h3>
 
-			<ol>
+			<ol id="list1">
 				<li>BLG 101E - Introduction to Information Systems</li>
 				<li>FIZ 101E - Physics 1 Labaratory</li>
 				<li>FIZ 101EL - Pyhsics 1</li>
@@ -59,29 +67,31 @@
 			</ol>
 		</div>
 
-		<hr/>
+	
 
 		<div id="skills">
 			<h2>Skills</h2>
-			<ul>
+			<ul id="list2">
 				<li>Python</li>
 				<li>C#,C++,C</li>
 				<li>Web Design</li>
 				<li>Graphical Design</li>
 			</ul>
 		</div>
+		
 		<div id="langs">
 			<h2>Languages</h2>
-			<ul>
+			<ul id="list3">
 			<li>Turkish</li>
 			<li>English</li>
 			<li>German</li>
 			<li>Arabic</li>
-			</ul>
+			</ul> 
 		</div>
+		
 		<div id="hobbies">
 			<h2>Hobbies</h2>
-			<ul>
+			<ul id="list4">
 			<li>Chess(Semi-prof)</li>
 			<li>Ping-Pong</li>
 			<li>Basketball</li>
