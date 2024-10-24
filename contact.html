@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Emir Arda Eker</title>
+    <title>Contact | Emir Arda Eker</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header class="navbar">
-        <h1>Emir Arda Eker</h1>
+        <h1>Contact Me</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="skills.html">Skills</a>
@@ -18,15 +17,17 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <img src="images/me.jpg" alt="Emir Arda Eker" class="profile-photo">
-        <h2>Hi, I'm Emir Arda</h2>
-        <p>2nd-year Mechanical Engineering student with a passion for AI, Machine Learning, and software development.</p>
+    <section class="contact-form">
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Emir Arda Eker. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
